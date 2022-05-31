@@ -1,0 +1,62 @@
+
+.row{
+    padding: 20px;
+    padding-right: 0px;
+}
+
+@media (max-width: 767px) {
+    #foto-de-perfil {
+        
+        width: 40%;
+        border-radius: 6em;
+        margin-left: 25%;
+        margin-top: -20%;
+    }
+
+    #nombre{
+        
+        margin-left: 15%;
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #foto-de-perfil {
+        
+        width: 100%;
+        border-radius: 6em;
+        margin-top: -40%;
+
+    }
+
+}
+
+#nombre{
+    margin-top: 5%;
+}
+
+
+
+
+
+/**
+h1{
+    font-size: 50%;
+}
+h2{
+    font-size: 30%;
+}
+**/
+/**
+#foto-de-perfil{
+    width: 100%;
+    border-radius: 6em;
+}
+
+#introductorio{
+    
+    margin-top: -150px;
+    margin: 10px;
+}
+**/

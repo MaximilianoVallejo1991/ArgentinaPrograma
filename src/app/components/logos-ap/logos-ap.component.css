@@ -1,0 +1,17 @@
+img {
+    width: 50px;
+}
+
+#logo-argp{
+    width: 120px;
+}
+
+.logoargprog{
+    left: 0mm;
+}
+.redessociales{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: -70px;
+}
+
