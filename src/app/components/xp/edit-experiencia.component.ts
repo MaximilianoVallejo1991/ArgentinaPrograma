@@ -24,7 +24,7 @@ export class EditExperienciaComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
-    console.log("ola perras");
+
     
   }
 
