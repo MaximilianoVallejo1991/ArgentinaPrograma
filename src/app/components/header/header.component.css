@@ -1,17 +1,14 @@
 #logos{
-    background-color:#011140 ;
-    padding: 50px;
-    padding-bottom: 0px;   
+    /* fallback for old browsers */
+    background: #6a11cb;
     
-   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(77, 12, 146), rgb(24, 79, 173));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(74, 12, 141), rgb(24, 79, 173));
+    padding-bottom: 20px;
+    padding-top: 20px;   
+    padding-left: 0%;
+    padding-left: 0%;
 }   
-
-#headertext{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-    background-color:#011140 ;
-    padding-left: 50px;
-    font-size: 20px;
-}
-

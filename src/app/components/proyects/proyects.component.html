@@ -1,41 +1,64 @@
 <div class="container-fluid">
     <div class="row">
 
-        <h1 >
-            Proyectos Realizados
-        </h1>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             
+            <h1 >
+                Proyectos Realizados
+            </h1>
+            <button id="boton-more" class="btn btn-primary" routerLink="/nuevoproy" *ngIf="isLogged ">
 
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-5 offset-lg-1 ">
-            <h1 id="titulo-proyecto">Portfolio Max</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae, nam, numquam ipsam molestias recusandae error laudantium suscipit, beatae sapiente repellendus libero autem aut officia excepturi animi temporibus culpa aperiam!</p>
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 offset-lg-1 ">
+
             
+
+            <table class="table" *ngFor="let Proyectos of proyectos">
+
+                <tbody>
+                    <tr>
+
+                        <td>
+                            {{Proyectos.nombreP}}
+                        </td>
+                        <td>
+                            {{Proyectos.descripcionP}}
+                        </td>
+
+                        <button id="boton-edit" class="btn btn-primary" routerLink="/editproy/{{Proyectos.id}}"
+                            *ngIf="isLogged ">
+
+                            <i class="fa-solid fa-square-pen"></i>
+                        </button>
+
+
+
+                        <button id="boton-trash" class="btn btn-primary" (click)="delete(Proyectos.id)">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+                    </tr>
+                </tbody>
+
+            </table>
         </div>
         
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-5">
+
             <img src="../../../assets/Captura de pantalla (790).png" class="img-fluid img-proyecto">
             
-        </div>
-
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            
-            <button id="boton-acerca" class="btn btn-primary">
-
-                <i class="fa-solid fa-plus"></i>
-            
-            </button>            
-                <button id="boton-acerca" class="btn btn-primary">
-            
-            <i class="fa-solid fa-square-pen"></i>
-
-            </button>
-                <button id="boton-acerca" class="btn btn-primary">
-            
-            <i class="fa-solid fa-trash"></i>
-            
-            </button>
-
-        </div>
-        
 
     </div>
 </div>
+
+

@@ -1,48 +1,53 @@
-<div class="container-fluid">
+<div class="container-fluid" >
     
-    <h1 id="hard">
-        Hard & Soft skills
-    </h1>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    
+            <h1 id="hard">
+             Hard & Soft skills
+            </h1>
+
+        </div>
+
+    </div>
 
     <div class="row">
 
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 offset-lg-1">
-            
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
             <circle-progress
-            [percent]="85"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [imageSrc]="'../assets/html.png'"
-            [showImage]="true"
-            [imageHeight]="90"
-            [imageWidth]="90"
-            [backgroundColor]="'white'"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="300"
-            > </circle-progress>
-    
+                [percent]="85"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#78C000'"
+                [innerStrokeColor]="'#C7E596'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
         </div>
+    </div>
 
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    <div class="row" >
 
-                <button id="boton-acerca" class="btn btn-primary">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="botoneshard">
+  
+            <button  id="boton-more" class="btn btn-primary">
 
-                    <i class="fa-solid fa-plus"></i>
-                    
-                </button>            
-                <button id="boton-acerca" class="btn btn-primary">
-                    
-                    <i class="fa-solid fa-square-pen"></i>
+                <i class="fa-solid fa-plus"></i>
+                
+            </button>            
+            <button id="boton-edit" class="btn btn-primary">
+                
+                <i class="fa-solid fa-square-pen"></i>
 
-                </button>
-                <button id="boton-acerca" class="btn btn-primary">
-                    
-                    <i class="fa-solid fa-trash"></i>
-                    
-                </button>
+            </button>
+            <button  id="boton-trash" class="btn btn-primary">
+                
+                <i class="fa-solid fa-trash"></i>
+                
+            </button>
 
         </div>
         
