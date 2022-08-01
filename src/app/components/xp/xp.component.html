@@ -1,20 +1,33 @@
 <div class="container">
- 
-    <div class="row"> 
+
+    <div class="row">
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <h1>
+                EXPERIENCIAS LABORALES
+            </h1>
             <button  id="boton-more" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged ">
 
                 <i class="fa-solid fa-plus"></i>   
                 
             </button>  
+
+        </div>
+
+    </div>
+ 
+    <div class="row"> 
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
             <table class="table" *ngFor="let Experiencia of expe">
               
                 <tbody>
                     <tr >
 
                         <td>
-                            {{Experiencia.nombreE}}
+                           <h1>{{Experiencia.nombreE}}</h1> 
                         </td>
                         <td>
                             {{Experiencia.descripcionE}} 

@@ -17,3 +17,28 @@ h1{
   
 }
 
+.card{
+  position: relative;
+  width: 200px;
+  background-color: #400ca0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 270px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  margin-top: 23px;
+  margin: 10px; }
+
+  img{
+    width: 50%;
+  }
+
+.BOTONES{
+  display: flex;
+}
+button{
+  margin: 5px;
+}
