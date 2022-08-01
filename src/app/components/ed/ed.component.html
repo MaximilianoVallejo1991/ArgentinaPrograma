@@ -42,7 +42,7 @@
 
 
 
-                        <button id="boton-trash" class="btn btn-primary" (click)="delete(Educacion.id)">
+                        <button id="boton-trash" class="btn btn-primary" (click)="delete(Educacion.id)" *ngIf="isLogged ">
 
                             <i class="fa-solid fa-trash"></i>
 

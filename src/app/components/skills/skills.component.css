@@ -35,7 +35,10 @@ h1{
   img{
     width: 50%;
   }
-
+#tecnologias{
+  display: flex;
+  justify-content: space-around;
+}
 .BOTONES{
   display: flex;
 }
